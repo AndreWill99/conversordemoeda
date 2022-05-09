@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Conversao de Moeda</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="titulo">Conversão de Moeda</header>
+  
+  <div>
+    <p>Moeda de entrada</p>
+    <input type="radio" name="in" value="BRL" checked>REAL<br>
+    <input type="radio" name="in" value="USD">DOLAR<br>
+    <input type="radio" name="in" value="EUR">EURO<br>
+    <input type="radio" name="in" value="GBP">LIBRA<br>
+  </div>
+
+  <div>
+    <p>Moeda de entrada</p>
+    <input type="radio" name="out" value="BRL">REAL<br>
+    <input type="radio" name="out" value="USD" checked>DOLAR<br>
+    <input type="radio" name="out" value="EUR">EURO<br>
+    <input type="radio" name="out" value="GBP">LIBRA<br>
+  </div>
+  
+  <input id="quantia" type="number" value="12.00">
+  <button onclick="convert()">CONVERTER</button>
+  <div>O valor convertido é: <span id="res">??</span></div>
+  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
